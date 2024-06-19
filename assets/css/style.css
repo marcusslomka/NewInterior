@@ -18,17 +18,28 @@
 html {
     font-size: 1rem;
     font-family: Alegreya_SC, Arial, Helvetica, sans-serif;
+    color: #6A6A6A;
 }
 img{
     max-width: 100%;
 }
 .text {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
-    color: #6a6a6a;
+    margin-top: 2vh;
 }
-h3{
+.h3_grey{
     color: #3A4F52;
     font-size: 2rem;
+}
+.h3_white{
+    color: white;
+    font-size: 2rem;
+}
+h4 {
+    font-size: 2rem;
+}
+.white{
+    color: white;
 }
 
 /* ------HEADER-------- */
@@ -74,12 +85,15 @@ header section p{
 /* --------MAIN-------- */
 
 main{
-    padding: 2vh 2vh;
+    /* padding: 2vh 2vh; */
+    width: 100%;
 }
+/* -----*latest works---- */
+
 .latest_works { 
     display: flex;
     flex-direction: column;
-    padding: 1vh 5vw;
+    padding: 4vh 5vw;
     line-height: 6vh;
 }
 .head_latest_works {
@@ -88,21 +102,23 @@ main{
     height: 13vh;
 }
 .view_all {
-    width: 10vh;
-    height: 5vh;
+    width: 15vh;
+    height: 7vh;
     border: 1px solid #3A4F52;
     color: #3A4F52;
     font-size: 1rem;
 }
 .pics_latest_work {
+    margin-top: 3vh ;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2, 200px);
-    gap: 8vh 3vh;
+    gap: 3vh 3vh;
+    object-fit: cover;
 }
 .pics_latest_work img {
-    width: 50vh;
     height: 30vh;
+    width: 100%;
 }
 .pics_latest_work img:nth-of-type(1){
     grid-column: 1/2;
@@ -128,5 +144,67 @@ main{
     grid-column: 3/4;
     grid-row: 2/3;
 }
+/* -----*services---- */
 
+.our_services {
+    margin-top: 15vh;
+    padding-top: 30vh;
+    background-image: url(../img/services.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
 
+.background_service{   
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    height: 55vh;
+    padding-top: 2vh;
+}
+.services{
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.first_service {
+    width: 30%;
+}
+.second_service {
+    width: 30%;
+}
+.third_service {
+    width: 30%;
+}
+
+/* ---------*Blog----------- */
+.blog {
+    padding: 4vh 5vw;
+
+}
+.headline_blog {
+    display: flex;
+    justify-content: space-between;
+}
+.first_blog {
+    width: 30%;
+    height: 40vh;
+    background-color: red;
+}
+.second_blog {
+    width: 30%;
+    height: 40vh;
+    background-color: red;
+}
+.third_blog {
+    width: 30%;
+    height: 40vh;
+    background-color: red;
+}
