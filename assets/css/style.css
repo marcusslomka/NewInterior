@@ -41,6 +41,7 @@ h4 {
 h5{
     color: #3A4F52;
     font-size: 1.8rem;
+    margin-top: 2vh;
 }
 .white{
     color: white;
@@ -180,7 +181,6 @@ main{
     display: flex;
     justify-content: center;
 }
-
 .background_service{   
     background-color: rgba(0, 0, 0, 0.2);
     display: flex;
@@ -208,9 +208,10 @@ main{
 }
 
 /* ---------*Blog----------- */
+
 .blog {
     padding: 4vh 5vw;
-    margin-bottom: 50vh;
+    margin-bottom: 5vh;
 }
 .headline_blog {
     display: flex;
@@ -238,4 +239,35 @@ main{
     display: flex;
     flex-direction: column;
     width: 31%;
+}
+
+/* -----*Free Quote---- */
+
+.free_quote {
+    padding: 5vh 17vh;
+    background-image: url(../img/free_quote.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.background_quote {
+    padding: 3vh 3vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quote {
+    color: white;
+    font-size: 1.7rem;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+.get_quote {
+    margin-top: 9vh;
+    padding: 1vh 1vh;
+    background: none;
+    color: white;
+    border: 1px solid white;
+
 }
