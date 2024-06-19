@@ -38,8 +38,17 @@ img{
 h4 {
     font-size: 2rem;
 }
+h5{
+    color: #3A4F52;
+    font-size: 1.8rem;
+}
 .white{
     color: white;
+}
+a {
+    text-decoration: none;
+    color: #4DA7CA;
+    
 }
 
 /* ------HEADER-------- */
@@ -113,12 +122,26 @@ main{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2, 200px);
-    gap: 3vh 3vh;
+    gap: 2vh 2vh;
     object-fit: cover;
+
 }
 .pics_latest_work img {
+    object-fit: cover;
     height: 30vh;
     width: 100%;
+    object-position: center;
+    transition: all 1s linear;
+}
+.pics_latest_work div{
+    overflow: hidden;
+}
+.pics_latest_work div img:hover{
+    transform: scale(2.5);
+    opacity: 50%;
+}
+.pics_latest_work div:hover{
+    background-color: rgb(16, 70, 34);
 }
 .pics_latest_work img:nth-of-type(1){
     grid-column: 1/2;
@@ -187,24 +210,32 @@ main{
 /* ---------*Blog----------- */
 .blog {
     padding: 4vh 5vw;
-
+    margin-bottom: 50vh;
 }
 .headline_blog {
     display: flex;
     justify-content: space-between;
 }
+.three_blogs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7vh;
+}
+.three_blogs a{
+    margin-top: 2vh;
+}
 .first_blog {
-    width: 30%;
-    height: 40vh;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    width: 31%;
 }
 .second_blog {
-    width: 30%;
-    height: 40vh;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    width: 31%;
 }
 .third_blog {
-    width: 30%;
-    height: 40vh;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    width: 31%;
 }
