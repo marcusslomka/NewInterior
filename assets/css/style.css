@@ -179,7 +179,6 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
     display: flex;
     justify-content: center;
 }
@@ -189,8 +188,7 @@ main{
     flex-direction: column;
     align-items: center;
     width: 85%;
-    height: 55vh;
-    padding-top: 2vh;
+    padding: 2vh 0;
 }
 .services{
     margin-top: 10vh;
@@ -379,4 +377,88 @@ main{
     color: white;
  }
 
+/* ------🎉Mmmmmmmmmmedia Querries!!!!!11!!!!🎉------ */
+/* -------!Tablet-version------ */
 
+@media only screen and (max-width: 992px){
+/* ------*latest Works------ */
+
+.latest_works { 
+    padding: 4vh 3vw;
+}
+.pics_latest_work {
+    margin-top: 2vh;
+}
+.view_all {
+    width: 12vh;
+    height: 4vh;
+}
+.pics_latest_work {
+    margin-top: 3vh ;
+    grid-template-rows: repeat(2, 150px);
+}
+
+/* ---------*our Services------ */
+
+.our_services {
+    margin-top: 8vh;
+    padding: 8vh 0;
+}
+.services{
+    margin-top: 3vh;
+    flex-direction: column;
+}
+.first_service {
+    width: 90%;
+}
+.second_service {
+    width: 90%;
+}
+.third_service {
+    width: 90%;
+}
+
+/* --------*Blog-------- */
+
+.blog {
+    padding: 4vh 3vw;
+}
+
+/* --------*Free Quote-------- */
+
+.free_quote {
+    margin-top: 5vh;
+    padding: 5vh 5vh;
+    text-align: center;
+}
+.get_quote {
+    margin-top: 5vh;
+}  
+
+/* --------*Testimonials-------- */
+
+.testimonials {
+    margin-top: 2vh;
+    padding: 2vh 5vw;
+}
+.three_customers {
+    margin-top: 2vh;
+    flex-direction: column;
+}
+.first_customer {
+    width: 90%;
+    margin-top: 4vh; 
+}
+.second_customer {
+    width: 90%;
+    margin-top: 4vh; 
+}
+.third_customer {
+    width: 90%;
+    margin-top: 4vh; 
+}
+
+/* -------!Phone-version------ */
+@media only screen and (max-width: 768px) {
+
+}
