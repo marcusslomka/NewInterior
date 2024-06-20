@@ -106,7 +106,6 @@ main{
     display: flex;
     flex-direction: column;
     padding: 4vh 5vw;
-    line-height: 6vh;
 }
 .head_latest_works {
     display: flex;
@@ -114,6 +113,7 @@ main{
     height: 13vh;
 }
 .view_all {
+    margin: 1.5vh;
     width: 15vh;
     height: 7vh;
     border: 1px solid #3A4F52;
@@ -174,7 +174,7 @@ main{
 
 .our_services {
     margin-top: 15vh;
-    padding-top: 30vh;
+    padding: 5vh 0;
     background-image: url(../img/services.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -409,12 +409,15 @@ main{
     flex-direction: column;
 }
 .first_service {
+    margin-top: 2vh;
     width: 90%;
 }
 .second_service {
+    margin-top: 2vh;
     width: 90%;
 }
 .third_service {
+    margin-top: 2vh;
     width: 90%;
 }
 
@@ -457,8 +460,73 @@ main{
     width: 90%;
     margin-top: 4vh; 
 }
-
+}
 /* -------!Phone-version------ */
 @media only screen and (max-width: 768px) {
+/* -----*latest Works---------- */
 
+.pics_latest_work {
+    margin-top: 5vh ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+.pics_latest_work img {
+    height: 30vh;
+    width: 85vw;
+}
+.view_all {
+    margin: 1vh;
+}
+
+/* -------*services--------- */
+
+.first_service {
+    margin-top: 4vh;
+    width: 95%;
+}
+.second_service {
+    margin-top: 4vh;
+    width: 95%;
+}
+.third_service {
+    margin-top: 4vh;
+    width: 95%;
+}
+
+/* ---------*Blog----------- */
+
+.blog {
+    padding: 4vh 5vw;
+}
+.three_blogs {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.three_blogs a{
+    margin-top: 1vh;
+}
+.first_blog {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+.second_blog {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+.third_blog {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+}
+
