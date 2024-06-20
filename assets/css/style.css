@@ -102,6 +102,9 @@ main{
 }
 /* -----*latest works---- */
 
+nav:hover {
+    text-decoration: underline;
+}
 .latest_works { 
     display: flex;
     flex-direction: column;
@@ -113,12 +116,19 @@ main{
     height: 13vh;
 }
 .view_all {
-    margin: 1.5vh;
+    margin-top: 1.5vh;
     width: 15vh;
     height: 7vh;
     border: 1px solid #3A4F52;
     color: #3A4F52;
     font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.view_all:hover {
+    background-color: #3A4F52;
+    color: white;
 }
 .pics_latest_work {
     margin-top: 3vh ;
